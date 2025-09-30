@@ -135,6 +135,16 @@ main {
     margin-bottom: 32px;
 }
 
+
+.section__lead {
+    max-width: 620px;
+    margin-bottom: 36px;
+    color: var(--muted);
+    font-size: 1.05rem;
+}
+
+
+
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -159,6 +169,47 @@ main {
     font-size: 1.3rem;
     color: var(--accent);
 }
+
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+.menu-card {
+    background-color: var(--surface);
+    padding: 28px;
+    border-radius: var(--radius);
+    box-shadow: 0 12px 28px rgba(34, 20, 13, 0.08);
+    display: grid;
+    gap: 18px;
+}
+
+.menu-card h3 {
+    font-size: 1.2rem;
+    color: var(--accent);
+}
+
+.menu-list {
+    list-style: none;
+    display: grid;
+    gap: 12px;
+}
+
+.menu-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 1rem;
+}
+
+.menu-list span:last-child {
+    color: var(--accent-light);
+    font-weight: 600;
+}
+
+=======
 
 .list {
     list-style: none;
