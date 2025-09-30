@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кофейня "Тихая Обжарка"</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <p class="hero__eyebrow">Городская кофейня</p>
+            <h1 class="hero__title">Тихая Обжарка</h1>
+            <p class="hero__subtitle">Мы заботимся о каждом зерне и каждом госте.</p>
+            <a class="hero__cta" href="#contact">Забронировать столик</a>
+        </div>
+        <div class="hero__info">
+            <div>
+                <span class="label">Адрес</span>
+                <p>ул. Ароматная, 12</p>
+            </div>
+            <div>
+                <span class="label">Телефон</span>
+                <a class="phone" href="tel:+74951234567">+7 (495) 123-45-67</a>
+            </div>
+            <div>
+                <span class="label">Часы работы</span>
+                <p>Каждый день 08:00–22:00</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" id="about">
+            <div class="container">
+                <h2>Почему гости выбирают нас</h2>
+                <div class="feature-grid">
+                    <article class="card">
+                        <h3>Свежая обжарка</h3>
+                        <p>Мы обжариваем кофейные зерна малыми партиями каждую неделю, чтобы сохранить аромат и вкус.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Авторские напитки</h3>
+                        <p>Бариста готовят авторские напитки и сезонные лимонады на основе домашних сиропов.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Тихая атмосфера</h3>
+                        <p>Лаконичный интерьер и мягкое освещение помогут сосредоточиться на беседе или работе.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--alt" id="menu">
+            <div class="container">
+                <h2>Меню</h2>
+                <p class="section__lead">Мы собрали любимые напитки гостей и несколько сезонных позиций, которые отлично раскрывают вкус свежей обжарки.</p>
+                <div class="menu-grid">
+                    <article class="menu-card">
+                        <h3>Эспрессо-бар</h3>
+                        <ul class="menu-list">
+                            <li><span>Эспрессо</span><span>150 ₽</span></li>
+                            <li><span>Доппио</span><span>210 ₽</span></li>
+                            <li><span>Американо</span><span>190 ₽</span></li>
+                            <li><span>Флэт уайт</span><span>260 ₽</span></li>
+                        </ul>
+                    </article>
+                    <article class="menu-card">
+                        <h3>Авторские напитки</h3>
+                        <ul class="menu-list">
+                            <li><span>Солёная карамель</span><span>290 ₽</span></li>
+                            <li><span>Лавандовый раф</span><span>310 ₽</span></li>
+                            <li><span>Холодный брют-тоник</span><span>280 ₽</span></li>
+                            <li><span>Миндальное капучино</span><span>270 ₽</span></li>
+                        </ul>
+                    </article>
+                    <article class="menu-card">
+                        <h3>Десерты</h3>
+                        <ul class="menu-list">
+                            <li><span>Чизкейк с карамелью</span><span>250 ₽</span></li>
+                            <li><span>Шоколадный фондан</span><span>270 ₽</span></li>
+                            <li><span>Песочное печенье</span><span>140 ₽</span></li>
+                            <li><span>Грушевый тарт</span><span>230 ₽</span></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container contact">
+                <div>
+                    <h2>Оставьте заявку</h2>
+                    <p>Заполните форму, и мы свяжемся с вами в течение дня, чтобы обсудить детали бронирования или сотрудничества.</p>
+                    <div class="contact__phone">
+                        <span class="label">Телефон для связи</span>
+                        <a class="phone" href="tel:+74951234567">+7 (495) 123-45-67</a>
+                    </div>
+                </div>
+                <form class="form" action="#" method="post">
+                    <label class="form__field">
+                        <span>Имя</span>
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                    </label>
+                    <label class="form__field">
+                        <span>Телефон</span>
+                        <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+                    </label>
+                    <label class="form__field">
+                        <span>Комментарий</span>
+                        <textarea name="message" rows="4" placeholder="Чем мы можем помочь?" required></textarea>
+                    </label>
+                    <button type="submit" class="form__submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© 2024 Тихая Обжарка. Все права защищены.</p>
+            <p><a href="mailto:hello@quietroast.ru">hello@quietroast.ru</a></p>
+        </div>
+    </footer>
+
+    <!-- Пример места для тестовых скриптов -->
+    <script>
+        window.TEST_SITE_READY = true;
+    </script>
+</body>
+</html>
