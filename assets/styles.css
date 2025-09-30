@@ -135,12 +135,15 @@ main {
     margin-bottom: 32px;
 }
 
+
 .section__lead {
     max-width: 620px;
     margin-bottom: 36px;
     color: var(--muted);
     font-size: 1.05rem;
 }
+
+
 
 .feature-grid {
     display: grid;
@@ -166,6 +169,7 @@ main {
     font-size: 1.3rem;
     color: var(--accent);
 }
+
 
 .menu-grid {
     display: grid;
@@ -204,6 +208,8 @@ main {
     color: var(--accent-light);
     font-weight: 600;
 }
+
+=======
 
 .list {
     list-style: none;
