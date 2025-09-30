@@ -30,8 +30,8 @@ a {
 .hero {
     position: relative;
     padding: 160px 0 120px;
-    background: linear-gradient(135deg, rgba(90, 56, 30, 0.85), rgba(26, 16, 9, 0.85)),
-        url('https://images.unsplash.com/photo-1504753793650-d4a2b783c15e?auto=format&fit=crop&w=1600&q=80') center/cover;
+    background: linear-gradient(135deg, rgba(90, 56, 30, 0.88), rgba(26, 16, 9, 0.88)),
+        url('cafe-interior.png') center/cover;
     color: #fff;
     overflow: hidden;
 }
@@ -55,6 +55,10 @@ a {
     font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 16px;
+}
+
+.section--interior .hero__eyebrow {
+    color: var(--accent-light);
 }
 
 .hero__title {
@@ -119,6 +123,75 @@ main {
 
 .section {
     padding: 80px 0;
+}
+
+.section--interior {
+    background-color: var(--surface);
+}
+
+.interior {
+    display: grid;
+    gap: 32px;
+    align-items: center;
+}
+
+.interior__content {
+    display: grid;
+    gap: 18px;
+}
+
+.interior__content h2 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    color: var(--accent);
+}
+
+.interior__content p {
+    color: var(--muted);
+    font-size: 1.05rem;
+}
+
+.interior__highlights {
+    display: grid;
+    gap: 14px;
+}
+
+.interior__highlights li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.interior__highlights li::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), var(--accent-light));
+}
+
+.interior__media {
+    position: relative;
+}
+
+.interior__media::after {
+    content: "";
+    position: absolute;
+    inset: 20px -20px -20px 20px;
+    border-radius: var(--radius);
+    background: rgba(90, 56, 30, 0.1);
+    filter: blur(40px);
+    z-index: 0;
+}
+
+.interior__image {
+    position: relative;
+    width: 100%;
+    border-radius: calc(var(--radius) + 8px);
+    box-shadow: 0 24px 40px rgba(34, 20, 13, 0.25);
+    display: block;
 }
 
 .section--alt {
@@ -320,6 +393,17 @@ main {
 @media (min-width: 768px) {
     .contact {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .interior {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .interior {
+        grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+        gap: 56px;
     }
 }
 
