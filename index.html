@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кофейня "Тихая Обжарка"</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <p class="hero__eyebrow">Городская кофейня</p>
+            <h1 class="hero__title">Тихая Обжарка</h1>
+            <p class="hero__subtitle">Мы заботимся о каждом зерне и каждом госте.</p>
+            <a class="hero__cta" href="#contact">Забронировать столик</a>
+        </div>
+        <div class="hero__info">
+            <div>
+                <span class="label">Адрес</span>
+                <p>ул. Ароматная, 12</p>
+            </div>
+            <div>
+                <span class="label">Телефон</span>
+                <a class="phone" href="tel:+74951234567">+7 (495) 123-45-67</a>
+            </div>
+            <div>
+                <span class="label">Часы работы</span>
+                <p>Каждый день 08:00–22:00</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" id="about">
+            <div class="container">
+                <h2>Почему гости выбирают нас</h2>
+                <div class="feature-grid">
+                    <article class="card">
+                        <h3>Свежая обжарка</h3>
+                        <p>Мы обжариваем кофейные зерна малыми партиями каждую неделю, чтобы сохранить аромат и вкус.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Авторские напитки</h3>
+                        <p>Бариста готовят авторские напитки и сезонные лимонады на основе домашних сиропов.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Тихая атмосфера</h3>
+                        <p>Лаконичный интерьер и мягкое освещение помогут сосредоточиться на беседе или работе.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--alt" id="testing">
+            <div class="container">
+                <h2>Площадка для тестирования скриптов</h2>
+                <p>Здесь можно безопасно размещать сторонние скрипты и проверять корректность работы систем аналитики, коллтрекинга и онлайн-консультантов.</p>
+                <ul class="list">
+                    <li>Яндекс.Метрика</li>
+                    <li>Google Analytics</li>
+                    <li>Сервисы обратного звонка</li>
+                    <li>Виджеты онлайн-чата</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container contact">
+                <div>
+                    <h2>Оставьте заявку</h2>
+                    <p>Заполните форму, и мы свяжемся с вами в течение дня, чтобы обсудить детали бронирования или сотрудничества.</p>
+                    <div class="contact__phone">
+                        <span class="label">Телефон для связи</span>
+                        <a class="phone" href="tel:+74951234567">+7 (495) 123-45-67</a>
+                    </div>
+                </div>
+                <form class="form" action="#" method="post">
+                    <label class="form__field">
+                        <span>Имя</span>
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                    </label>
+                    <label class="form__field">
+                        <span>Телефон</span>
+                        <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+                    </label>
+                    <label class="form__field">
+                        <span>Комментарий</span>
+                        <textarea name="message" rows="4" placeholder="Чем мы можем помочь?" required></textarea>
+                    </label>
+                    <button type="submit" class="form__submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© 2024 Тихая Обжарка. Все права защищены.</p>
+            <p><a href="mailto:hello@quietroast.ru">hello@quietroast.ru</a></p>
+        </div>
+    </footer>
+
+    <!-- Пример места для тестовых скриптов -->
+    <script>
+        window.TEST_SITE_READY = true;
+    </script>
+</body>
+</html>
